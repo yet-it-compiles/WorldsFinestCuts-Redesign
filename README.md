@@ -3,7 +3,7 @@
     
 <!-- Brief Project Description -->
 <h4 cursor="pointer"> 
-  This repository contains the redesigned version of <a href="[#key-features](https://worldsfinestcuts.com)">World’s Finest Cuts</a> business website. The project aims to modernize the overall look and feel, enhance user experience, and optimize performance. The goal is to create a responsive, user-friendly, and aesthetically pleasing platform to represent the brand effectively and boost its online presence.</h4>
+  This repository contains the redesigned version of <a href="https://worldsfinestcuts.com)">World’s Finest Cuts</a> business website. The project aims to modernize the overall look and feel, enhance user experience, and optimize performance. The goal is to create a responsive, user-friendly, and aesthetically pleasing platform to represent the brand effectively and boost its online presence.</h4>
 
 ---
 
@@ -19,9 +19,6 @@
 ---
 <!-- KEY FEATURES -->
 <h1 id='key-features'>🚀 Key Features</h1>
-
-<!-- Import a gif of what you want to demonstrate -->
-
 [COMING SOON]
 
 <!-- HOW TO USE SECTION -->
@@ -82,4 +79,3 @@ For commercial use inquiries or permission requests, please contact Tyler S. Uns
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, AND NONINFRINGEMENT. IN NO EVENT SHALL TYLER S. UNSWORTH, A.K.A. YET-IT-COMPILES, OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
