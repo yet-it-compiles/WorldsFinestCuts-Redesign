@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+main {
+    background-color: $header-background;
+}
+
+h1 {
+    color: $landing-title;
+    font-size: 55px;
+    font-family: Benne;
+    font-weight: 400;
+    letter-spacing: 2.20px;
+}
+
+h2 {
+    color: white;
+    font-size: 16px;
+    font-family: Open Sans;
+    font-style: italic;
+}
+
+section {
+    text-align: center;
+}
+
+button {
+    padding: 10px;
+    background-color: $landing-title;
+}
