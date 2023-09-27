@@ -1,9 +1,10 @@
 <!-- Project Intro Video -->
-<h1 align="center" style="display: flex; justify-content: center; gap: 10px;">🌐 World's Finest Cuts - Website Redesign</h1>
+<h1 align="center">🌐 World's Finest Cuts - Website Redesign</h1>
     
 <!-- Brief Project Description -->
 <h4 cursor="pointer"> 
-  This repository contains the redesigned version of <a href="https://worldsfinestcuts.com)">World’s Finest Cuts</a> business website. The project aims to modernize the overall look and feel, enhance user experience, and optimize performance. The goal is to create a responsive, user-friendly, and aesthetically pleasing platform to represent the brand effectively and boost its online presence.</h4>
+This repository contains the redesigned version of <a href="https://worldsfinestcuts.com"> World’s Finest Cuts</a> business website. The project aims to modernize the overall look and feel, enhance user experience, and optimize performance. The goal is to create a responsive, user-friendly, and aesthetically pleasing platform to represent the brand effectively and boost its online presence.
+</h4>
 
 ---
 
@@ -24,7 +25,7 @@
 <!-- HOW TO USE SECTION -->
 <h1 id='how-to-use'>🛠️ How To Use</h1>
 
-To clone and run this application, you'll need [React]([https://nodejs.org/en](https://react.dev)) and [Node](https://nodejs.org/en) 
+To clone and run this application, you'll need [React](https://react.dev) and [Node](https://nodejs.org/en) 
 
 ```bash
 # Clone the WorldsFinestCuts-Redesign Respiratory
