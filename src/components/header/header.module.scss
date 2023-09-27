@@ -1,0 +1,26 @@
+@import '../../styles/variables';
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $header-text;
+    background-color: $header-background;
+    font-family: Roboto;
+    font-weight: 700;
+    border-radius: 15px 15px 0px 0px;
+
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        gap: 18px;
+    }
+
+    .enrollment {
+        position: relative;
+        right: 50px;
+    }
+
+}
