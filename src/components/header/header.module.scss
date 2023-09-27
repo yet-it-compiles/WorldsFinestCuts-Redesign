@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: $header-text;
+    color: white;
     background-color: $header-background;
     font-family: Roboto;
     font-weight: 700;
@@ -22,5 +22,4 @@
         position: relative;
         right: 50px;
     }
-
 }

@@ -5,7 +5,7 @@ main {
 }
 
 h1 {
-    color: $landing-title;
+    color: $primary-color;
     font-size: 55px;
     font-family: Benne;
     font-weight: 400;
@@ -25,5 +25,5 @@ section {
 
 button {
     padding: 10px;
-    background-color: $landing-title;
+    background-color: $primary-color;
 }
