@@ -6,6 +6,8 @@
  * @exports AboutUs
  */
 
+import styles from "./about.module.scss";
+
 /**
  * @component AboutUs
  *
@@ -15,7 +17,7 @@
  */
 const AboutUs = () => {
     return (
-        <main>
+        <main className={styles.about}>
             <section>
                 <h1>Who We Are</h1>
                 <p>

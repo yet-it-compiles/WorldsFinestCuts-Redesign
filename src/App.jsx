@@ -8,6 +8,8 @@
  * 
  * @exports App
  */
+import LandingPage from "./pages/landing-page/LandingPage";
+import AboutUs from "./pages/about-us/AboutUs";
 
 /**
  * @function App
@@ -20,7 +22,8 @@
 const App = () => {
   return (
     <>
-      <h1>App Page</h1>
+      <LandingPage/>
+      <AboutUs/>
     </>
   );
 };
