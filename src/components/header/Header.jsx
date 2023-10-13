@@ -16,9 +16,9 @@ const PAGE_LINKS = [
 ]
 
 const ACCOUNT_LINKS = [
-    {name: "Login 🎉", path: "/"},
-    {name: "Register 🚀", path: "/"},
-    {name: "Cart 🛒", path: "/", icon: ""},
+    {name: "Login", path: "/"},
+    {name: "Register", path: "/"},
+    {name: "Cart", path: "/", icon: ""},
 ]
 
 /**
@@ -30,7 +30,7 @@ const ACCOUNT_LINKS = [
  */
 const Header = () => (
     <nav className={styles.navigation}>
-          <section className={styles.links}>
+          <section className={styles.pages}>
               <ul>
                   {PAGE_LINKS.map((eachLink, index) => (
                       <li key={index}><p>{eachLink.name}</p></li>
@@ -38,7 +38,7 @@ const Header = () => (
               </ul>
           </section>
   
-          <section className={styles.enrollment}>
+          <section className={styles.actions}>
               <ul>
                   {ACCOUNT_LINKS.map((eachLink, index) => (
                       <li key={index}><p>{eachLink.name}</p></li>

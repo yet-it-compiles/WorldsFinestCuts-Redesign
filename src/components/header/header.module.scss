@@ -1,25 +1,18 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
 .navigation {
+    height: 8vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 2rem;
+    border-radius: 1rem 1rem 0rem 0rem;
     color: white;
-    background-color: $header-background;
-    font-family: Roboto;
-    font-weight: 700;
-    border-radius: 15px 15px 0px 0px;
+    background-color: #272727;
 
     ul {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style-type: none;
-        gap: 18px;
-    }
-
-    .enrollment {
-        position: relative;
-        right: 50px;
+        list-style: none;
+        gap: 1rem;
     }
 }

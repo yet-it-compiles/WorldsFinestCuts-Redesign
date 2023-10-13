@@ -1,29 +1,36 @@
-@import '../../styles/variables';
+@import "../../styles/variables";
 
-main {
-    background-color: $header-background;
-}
+.landing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+    color: #dcca87;
+    background-image: url("../../assets/landing-page.svg");
+    background-repeat: no-repeat;
 
-h1 {
-    color: $primary-color;
-    font-size: 55px;
-    font-family: Benne;
-    font-weight: 400;
-    letter-spacing: 2.20px;
-}
+    h1 {
+        text-align: center;
+        font-size: 55px;
+        font-family: Benne;
+        font-weight: 400;
+    }
 
-h2 {
-    color: white;
-    font-size: 16px;
-    font-family: Open Sans;
-    font-style: italic;
-}
+    h2 {
+        text-align: center;
+        font-size: 16px;
+        font-family: Open Sans;
+        font-style: italic;
+        font-weight: 700;
 
-section {
-    text-align: center;
-}
+        color: white;
+    }
 
-button {
-    padding: 10px;
-    background-color: $primary-color;
+    button {
+        margin-left: 20vw;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        color: black;
+        background-color: #dcca87;
+    }
 }
