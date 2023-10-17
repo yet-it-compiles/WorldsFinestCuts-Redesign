@@ -18,10 +18,9 @@ import Header from "../../components/header/Header";
  * @component LandingPage
  *
  * @description Responsible for 
- *
  * Accomplished by 
  *
- * @returns {JSX.Element} - An element that resembles 
+ * @returns {JSX.Element} An element that resembles 
  */
 const LandingPage = () => {
   return (
