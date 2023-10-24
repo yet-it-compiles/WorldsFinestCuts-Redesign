@@ -18,7 +18,7 @@ import styles from "./about.module.scss";
 const AboutUs = () => {
     return (
         <main className={styles.about}>
-            <section>
+            <section>               
                 <h1>Who We Are</h1>
                 <p>
                     At World’s Finest Cuts, we aim to provide unparalleled
@@ -43,4 +43,5 @@ const AboutUs = () => {
         </main>
     );
 };
+
 export default AboutUs;

@@ -1,11 +1,35 @@
-.about {
-    height: 98vh;
+@import "../../styles/variables";
+@import "../../styles/mixins";
 
+.about {
+    display: flex;
+    height: 98vh;
     color: white;
     background-image: url("../../assets/background.svg");
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
 
-    h1 {
-        color: #dcca87;
+    &::before {
+        content: "";
+        flex: 1;
+    }
+
+    section {
+        flex: 1;
+        padding: 2rem;
+
+        h1 {
+            text-align: center;
+            color: $primary-color;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 32px;
+            font-family: Open Sans;
+            font-weight: 700;
+        }
     }
 }
