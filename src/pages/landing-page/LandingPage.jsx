@@ -31,7 +31,9 @@ const LandingPage = () => {
         <h1>Elevate Your Culinary Experience <br/> With World's Finest Cuts</h1>
         <h2>Discover a world of flavor with our premium, sustainably sourced <br/>meats and seafood, delivered fresh from our farms to your table.</h2>
 
-        <button type="submit">Explore Our Selection</button>
+        <div>
+          <button type="submit">Explore Our Selection</button>
+        </div>
       </section>
     </main>
     </>
