@@ -1,7 +1,8 @@
 /**
  * @file LandingPage.jsx
  *  
- * @description This file is responsible for 
+ * @description This file is responsible for structuring the layout of the 
+ * landing page
  *  
  * @requires react
  * @requires LandingPage.module.scss
@@ -9,7 +10,7 @@
  * @exports LandingPage
  */
 
-import React, { useState } from 'react';
+import React from 'react';
 
 import styles from "./landing.module.scss";
 import Header from "../../components/header/Header";
@@ -17,10 +18,9 @@ import Header from "../../components/header/Header";
 /**
  * @component LandingPage
  *
- * @description Responsible for 
- * Accomplished by 
+ * @description Responsible for defining the landing page
  *
- * @returns {JSX.Element} An element that resembles 
+ * @returns {JSX.Element} The landing page
  */
 const LandingPage = () => {
   return (
@@ -35,9 +35,10 @@ const LandingPage = () => {
           <button type="submit">Explore Our Selection</button>
         </div>
       </section>
-    </main>
+      </main>
     </>
     
   );
 };
+
 export default LandingPage;
