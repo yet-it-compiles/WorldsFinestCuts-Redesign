@@ -10,6 +10,7 @@
  */
 import LandingPage from "./pages/landing-page/LandingPage";
 import AboutUs from "./pages/about-us/AboutUs";
+import Product from "./components/product-display/Product";
 
 /**
  * @function App
@@ -24,6 +25,7 @@ const App = () => {
     <>
       <LandingPage/>
       <AboutUs/>
+      <Product/>
     </>
   );
 };
