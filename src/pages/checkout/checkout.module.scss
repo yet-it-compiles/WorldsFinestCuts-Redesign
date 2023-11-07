@@ -1,0 +1,45 @@
+@import "../../styles/variables";
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+
+    gap: 1rem;
+    background-color: #f9f9f9;
+
+    h1 {
+        color: #333;
+    }
+
+    .subtotal {
+        text-align: right;
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: #333;
+    }
+}
+
+.checkoutItem {
+    padding: 0.5rem;
+    max-width: 50%;
+
+    color: whitesmoke;
+    border-radius: 0.5rem;
+    background-color: $header-background;
+
+    section {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 4rem;
+    }
+
+    button {
+        height: 15px;
+        width: 15px;
+        margin: 0.3rem;
+        border-radius: 2rem;
+        color: whitesmoke;
+        background-color: gray;
+    }
+}

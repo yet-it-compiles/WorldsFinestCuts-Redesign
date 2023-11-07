@@ -1,52 +1,62 @@
 /**
  * @module Header
- *  
- * @description This file is responsible for defining the style and structure 
- * of the website header.
- *  
- * @exports Header
+ *
+ * @description This file defines the Header component which is responsible for
+ * rendering the website's header.
+ *
+ * @exports Header Functional component that returns the website header
  */
-import styles from './header.module.scss';
-import {TiShoppingCart} from 'react-icons/ti';
-import {RiAccountPinCircleLine} from 'react-icons/ri';
 
-
-const PAGE_LINKS = [
-    {name: "About Us", path: "/"},
-    {name: "Explore Menu", path: "/"},
-    {name: "Contact", path: "/"},
-]
-
-const ACCOUNT_LINKS = [
-    {name: "Login", path: "/", icon: <RiAccountPinCircleLine/>},
-    {name: "Cart", path: "/", icon: <TiShoppingCart/>},
-]
+import React from "react";
+import styles from "./header.module.scss";
+import { PAGE_LINKS, ACCOUNT_LINKS } from "../../data/constants";
 
 /**
  * @component Header
  *
- * @description 
+ * @description This component renders the two distinct header sections. First
+ * for general page navigation and another for actions such as account login or
+ * profile access.
  *
- * @returns {JSX.Element} 
+ * @returns {JSX.Element}
  */
 const Header = () => (
-    <nav className={styles.navigation}>
-          <section className={styles.pages}>
-              <ul>
-                  {PAGE_LINKS.map((eachLink, index) => (
-                      <li key={index}><p>{eachLink.name}</p></li>
-                  ))}
-              </ul>
-          </section>
-  
-          <section className={styles.actions}>
-              <ul>
-                  {ACCOUNT_LINKS.map((eachLink, index) => (
-                      <li key={index}><p>{eachLink.icon} {eachLink.name}</p></li>
-                  ))}
-              </ul>
-          </section>
-    </nav>
-  );
-  
+    <header className={styles.navigation}>
+        <nav className={styles.pages}>
+            <ul>
+                {PAGE_LINKS.map((eachLink) => (
+                    <li key={eachLink.name}>
+                        <a
+                            href={eachLink.href}
+                            aria-label={`Navigate to ${eachLink.name}`}
+                        >
+                            {eachLink.name}
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </nav>
+
+        <div className={styles.actions}>
+            <ul>
+                {ACCOUNT_LINKS.map((eachLink) => (
+                    <li key={eachLink.name}>
+                        <a
+                            href={eachLink.href}
+                            aria-label={`Navigate to ${eachLink.name} account section`}
+                        >
+                            {eachLink.icon && (
+                                <span aria-hidden="true">{eachLink.icon}</span>
+                            )}
+                            <span className={styles.linkText}>
+                                {eachLink.name}
+                            </span>
+                        </a>
+                    </li>
+                ))}
+            </ul>
+        </div>
+    </header>
+);
+
 export default Header;
