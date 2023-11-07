@@ -7,6 +7,9 @@
  * @exports Header
  */
 import styles from './header.module.scss';
+import {TiShoppingCart} from 'react-icons/ti';
+import {RiAccountPinCircleLine} from 'react-icons/ri';
+
 
 const PAGE_LINKS = [
     {name: "About Us", path: "/"},
@@ -15,8 +18,8 @@ const PAGE_LINKS = [
 ]
 
 const ACCOUNT_LINKS = [
-    {name: "Login", path: "/"},
-    {name: "Cart", path: "/", icon: ""},
+    {name: "Login", path: "/", icon: <RiAccountPinCircleLine/>},
+    {name: "Cart", path: "/", icon: <TiShoppingCart/>},
 ]
 
 /**
@@ -39,7 +42,7 @@ const Header = () => (
           <section className={styles.actions}>
               <ul>
                   {ACCOUNT_LINKS.map((eachLink, index) => (
-                      <li key={index}><p>{eachLink.name}</p></li>
+                      <li key={index}><p>{eachLink.icon} {eachLink.name}</p></li>
                   ))}
               </ul>
           </section>

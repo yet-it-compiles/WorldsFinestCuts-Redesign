@@ -1,45 +1,53 @@
-@import "../../styles/variables";
 @import "../../styles/mixins";
+@import "../../styles/variables";
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css2?family=Grechen+Fuemen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Grechen+Fuemen&display=swap");
 
 .landing {
     @include flexRowCenter;
     height: 98vh;
     color: whitesmoke;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("../../assets/landing-background.svg");
+    background: url("../../assets/landing-background.svg") no-repeat center
+        center/cover;
 
     img {
         position: absolute;
-        top: 6rem;
+        top: 7rem;
         left: 1rem;
     }
 
+    a {
+        &:visited,
+        &:active {
+            color: inherit;
+        }
+    }
+
     .socials {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
+        @include flexCol;
         align-items: center;
+        justify-content: space-evenly;
         height: 60%;
 
         .decoration {
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flexRowCenter;
+            width: 9rem;
             border: 1px white solid;
             transform: rotate(90deg);
-            width: 10rem;
         }
 
         .icons {
-            display: flex;
-            flex-direction: column;
+            @include flexCol;
             gap: 2rem;
+
+            a:nth-child(2) svg {
+                color: $emphasis-color;
+            }
         }
 
         svg {
-            height: 40px;
-            width: 40px;
+            @include setContainer(40px, 40px);
             cursor: pointer;
         }
     }
@@ -47,7 +55,7 @@
     h1 {
         font-size: 85px;
         font-weight: 400;
-        font-family: Benne;
+        font-family: "ABeeZee", sans-serif;
         margin: 0.5rem 0;
         cursor: pointer;
     }
@@ -57,26 +65,50 @@
     }
 
     h2 {
-        margin-top: 0.5rem;
+        margin: 0;
         font-size: 32px;
-        font-family: Open Sans;
-        font-style: italic;
-        font-weight: 700;
+        font-family: "Grechen Fuemen", cursive;
         color: $emphasis-color;
         cursor: pointer;
     }
 
     p {
+        margin-top: 0.2rem 0.2rem;
+        font-family: Open Sans;
+        font-style: italic;
         cursor: pointer;
     }
 
     button {
-        font-family: Cormorant Upright;
+        font-family: inter;
         font-weight: 700;
-        font-size: 26px;
+        font-size: 16px;
         padding: 1rem;
         border-radius: 2rem;
+        border-style: none;
         color: black;
         background-color: $primary-color;
+    }
+
+    h1,
+    h2,
+    p {
+        transition: transform 0.3s ease;
+
+        &:hover {
+            animation: riseUp 0.5s ease forwards;
+        }
+    }
+}
+
+@keyframes riseUp {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }

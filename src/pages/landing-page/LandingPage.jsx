@@ -35,9 +35,11 @@ const LandingPage = () => {
        <section className={styles.socials}>
         <div className={styles.decoration}></div>
           <section className={styles.icons}>
-            <FaFacebookF/>
-            <FaTwitter/>
-            <FaInstagram/>
+            <a href='https://www.facebook.com/michael.dunn.1420'><FaFacebookF/></a>
+            <a href='https://www.facebook.com/michael.dunn.1420'><FaTwitter/></a>
+            <a href='https://www.facebook.com/michael.dunn.1420'><FaInstagram/></a>
+            
+            
           </section>
           <div className={styles.decoration}></div>
        </section>

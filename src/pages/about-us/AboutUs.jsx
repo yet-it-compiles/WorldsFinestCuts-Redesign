@@ -21,7 +21,7 @@ const AboutUs = () => {
         <main className={styles.about}> 
 
             <div className={styles.container}>
-                <aside><img src={logo}></img></aside>
+                <aside><img src={logo} alt="Picture of the owner of World's Finest Cuts"></img></aside>
                 <section>
                     <header>
                         <div className={styles.decoration}></div>

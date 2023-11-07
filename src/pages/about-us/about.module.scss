@@ -5,29 +5,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Cutive&display=swap");
 
 .about {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexRowCenter;
     height: 100vh;
     padding: 20px;
 
-    color: white;
-    background-image: url("../../assets/landing-background.svg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    color: whitesmoke;
+    background: url("../../assets/landing-background.svg") no-repeat center
+        center/cover;
 
     .container {
-        display: flex;
+        @include flexAlign;
         margin-left: 30%;
         box-sizing: border-box;
-        align-items: center;
+
         gap: 5rem;
     }
 
     header {
-        display: flex;
-        align-items: center;
+        @include flexAlign;
 
         .decoration {
             width: 10rem;
