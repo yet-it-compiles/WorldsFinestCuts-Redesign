@@ -1,18 +1,21 @@
 @import "../../styles/variables";
 
 .navigation {
-    height: 4rem;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-right: 2rem;
     border-radius: 1rem 1rem 0rem 0rem;
     color: white;
     background-color: #272727;
 
     ul {
         display: flex;
-        list-style: none;
         gap: 1rem;
+        list-style: none;
+    }
+
+    .actions {
+        margin-right: 3rem;
     }
 }

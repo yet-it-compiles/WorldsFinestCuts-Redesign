@@ -9,15 +9,13 @@
 import styles from './header.module.scss';
 
 const PAGE_LINKS = [
-    {name: "Home", path: "/"},
-    {name: "Products", path: "/"},
-    {name: "Values", path: "/"},
+    {name: "About Us", path: "/"},
+    {name: "Explore Menu", path: "/"},
     {name: "Contact", path: "/"},
 ]
 
 const ACCOUNT_LINKS = [
     {name: "Login", path: "/"},
-    {name: "Register", path: "/"},
     {name: "Cart", path: "/", icon: ""},
 ]
 
