@@ -13,7 +13,9 @@
 import React from 'react';
 
 import styles from "./landing.module.scss";
+import logo from "../../assets/WFC-Logo.svg";
 import Header from "../../components/header/Header";
+
 
 /**
  * @component LandingPage
@@ -27,14 +29,26 @@ const LandingPage = () => {
     <>
       <Header/>
       <main className={styles.landing}>
-      <section>
-        <h1>Elevate Your Culinary Experience <br/> With World's Finest Cuts</h1>
-        <h2>Discover a world of flavor with our premium, sustainably sourced <br/>meats and seafood, delivered fresh from our farms to your table.</h2>
+      <img src={logo} alt="World's Finest Cuts Logo" />
+      
+       <section className={styles.socials}>
+        <div className={styles.decoration}></div>
+          <p>Facebook Icon</p>
+          <p>Twitter Icon</p>
+          <p>Instagram Icon</p>
+          <div className={styles.decoration}></div>
+       </section>
+      
+      <section className={styles.content}>
+        <h2>From The Ranch To Your Table</h2>
+        <h1><span>Elevate Your Culinary Experience</span> <br/> With World's Finest Cuts</h1>
+        <p>Discover a world of flavor with our premium, sustainably sourced <br/>meats and seafood, delivered fresh from our farms to your table.</p>
 
         <div>
           <button type="submit">Explore Our Selection</button>
         </div>
       </section>
+
       </main>
     </>
     

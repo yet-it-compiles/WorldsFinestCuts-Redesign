@@ -4,13 +4,37 @@
 .landing {
     @include flexRowCenter;
     height: 98vh;
-    color: #dcca87;
-    background-image: url("../../assets/landing-page.svg");
+    color: whitesmoke;
+
     background-size: cover;
     background-repeat: no-repeat;
+    background-image: url("../../assets/landing-background.svg");
+
+    img {
+        position: absolute;
+        top: 6rem;
+        left: 1rem;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 30vh;
+        margin-right: 2rem;
+
+        p {
+            text-align: center;
+        }
+
+        .decoration {
+            border: 1px white solid;
+            transform: rotate(90deg);
+        }
+    }
 
     section {
-        text-align: center;
+        text-align: left;
     }
 
     h1 {
@@ -19,12 +43,16 @@
         font-family: Benne;
     }
 
+    span {
+        color: $primary-color;
+    }
+
     h2 {
         font-size: 32px;
         font-family: Open Sans;
         font-style: italic;
         font-weight: 700;
-        color: $secondary-color;
+        color: $emphasis-color;
     }
 
     button {
@@ -32,7 +60,7 @@
         font-weight: 700;
         font-size: 26px;
         padding: 1rem;
-        border-radius: 0.5rem;
+        border-radius: 2rem;
         color: black;
         background-color: $primary-color;
     }
