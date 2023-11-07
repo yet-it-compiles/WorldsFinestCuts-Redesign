@@ -22,13 +22,16 @@ import { PAGE_LINKS, ACCOUNT_LINKS } from "../../data/constants";
  */
 const Header = () => (
     <header className={styles.navigation}>
-        <nav className={styles.pages}>
+        <nav aria-label="Main navigation" className={styles.pageNavigation}>
             <ul>
                 {PAGE_LINKS.map((eachLink) => (
                     <li key={eachLink.name}>
                         <a
                             href={eachLink.href}
-                            aria-label={`Navigate to ${eachLink.name}`}
+                            aria-label={
+                                eachLink.ariaLabel || `Go to ${eachLink.name}`
+                            }
+                            className={styles.navLink}
                         >
                             {eachLink.name}
                         </a>
@@ -37,16 +40,25 @@ const Header = () => (
             </ul>
         </nav>
 
-        <div className={styles.actions}>
+        <div className={styles.accountActions} aria-label="Account actions">
             <ul>
                 {ACCOUNT_LINKS.map((eachLink) => (
                     <li key={eachLink.name}>
                         <a
                             href={eachLink.href}
-                            aria-label={`Navigate to ${eachLink.name} account section`}
+                            aria-label={
+                                eachLink.ariaLabel ||
+                                `Access your ${eachLink.name}`
+                            }
+                            className={styles.actionLink}
                         >
                             {eachLink.icon && (
-                                <span aria-hidden="true">{eachLink.icon}</span>
+                                <span
+                                    className={styles.icon}
+                                    aria-hidden="true"
+                                >
+                                    {eachLink.icon}
+                                </span>
                             )}
                             <span className={styles.linkText}>
                                 {eachLink.name}
