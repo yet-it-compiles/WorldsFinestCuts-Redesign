@@ -1,22 +1,22 @@
 /**
- * Represents the page links for the application
+ * Represents the main navigation links for the application
  */
 export const PAGE_LINKS = [
-    { name: "About Us", path: "/" },
-    { name: "Explore Menu", path: "/" },
-    { name: "Contact", path: "/" },
+    { name: "About Us", path: "/about-us" },
+    { name: "Explore Menu", path: "/menu" },
+    { name: "Contact", path: "/contact" },
 ];
 
 /**
- * Represents the account links / user action and account links for the application
+ * Represents the account/user related action links of the application
  */
 export const ACCOUNT_LINKS = [
-    { name: "Login", path: "/" },
-    { name: "Cart", path: "/" },
+    { name: "Login", path: "/login" },
+    { name: "Cart", path: "/cart" },
 ];
 
 /**
- * Defines the various types of products WFC sells
+ * An enumeration of the types of products sold by World's Finest Cuts
  */
 export const PRODUCT_TYPES = [
     { type: "beef", label: "Premium Beef" },
@@ -26,7 +26,8 @@ export const PRODUCT_TYPES = [
 ];
 
 /**
- * Defines the featured items for this month
+ * An enumeration of featured items for the current month, showcasing special
+ * deals or selections.is month
  */
 export const FEATURED_ITEMS = [
     {
