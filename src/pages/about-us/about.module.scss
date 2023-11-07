@@ -1,35 +1,55 @@
-@import "../../styles/variables";
 @import "../../styles/mixins";
+@import "../../styles/variables";
 
 .about {
-    display: flex;
     height: 98vh;
+
     color: white;
-    background-image: url("../../assets/background.svg");
+    background-image: url("../../assets/landing-background.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
-    &::before {
-        content: "";
-        flex: 1;
-    }
+    header {
+        display: flex;
+        align-items: center;
 
-    section {
-        flex: 1;
-        padding: 2rem;
-
-        h1 {
-            text-align: center;
-            color: $primary-color;
-            margin-bottom: 1rem;
+        .decoration {
+            width: 10rem;
+            border: 1px white solid;
+            margin: 0 10px 0 0;
         }
 
-        p {
-            line-height: 1.6;
-            font-size: 32px;
-            font-family: Open Sans;
-            font-weight: 700;
+        h1 {
+            font-size: 26px;
+            font-family: Cutive;
+            font-weight: 400;
+
+            span {
+                color: #dcca87;
+            }
+        }
+    }
+
+    h2 {
+        margin: 0.5rem 0;
+        font-size: 50px;
+        font-family: Open Sans;
+        font-weight: 700;
+        span {
+            color: $primary-color;
+        }
+    }
+
+    p {
+        text-align: justify;
+        width: 19%;
+        font-size: 20px;
+        line-height: 35px;
+        letter-spacing: 0.8px;
+
+        span {
+            color: $primary-color;
         }
     }
 }

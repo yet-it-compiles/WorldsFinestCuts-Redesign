@@ -1,8 +1,8 @@
 /**
  * @module AboutUs.jsx
  *
- * @description 
- * 
+ * @description
+ *
  * @exports AboutUs
  */
 
@@ -11,35 +11,46 @@ import styles from "./about.module.scss";
 /**
  * @component AboutUs
  *
- * @description 
+ * @description
  *
  * @returns {JSX.Element} - An element that resembles
  */
 const AboutUs = () => {
     return (
-        <main className={styles.about}>
-            <section>               
-                <h1>Who We Are</h1>
+        <main className={styles.about}> 
+            <section>
+                <header>
+                    <div className={styles.decoration}></div>
+                    <h1>
+                        <span>About</span> World’s Finest Cuts
+                    </h1>
+                </header>
+                
+                <h2>
+                    From Pasture to Plate: <br />
+                    <span>Premium Selections Delivered</span>
+                </h2>
+
                 <p>
-                    At World’s Finest Cuts, we aim to provide unparalleled
-                    access to fresh, high-quality, and ethically raised
-                    products. We believe in fostering a connection between the
-                    farm and your table, offering meats and seafood that are
-                    harvested with profound respect for the environment and all
-                    beings we share it with. Our commitment is to enrich your
-                    culinary journey with the purest flavors of nature, ensuring
-                    every dish is a testament to quality and sustainability. Our
-                    specialty lies in delivering a diverse range of products
-                    including all-natural, grass-fed, grain-finished beef;
-                    free-range chicken; wild-caught seafood; and cage-free pork.
-                    We take pride in being the connoisseurs of wholesome and
-                    flavorful experiences, offering a myriad of choices that
-                    guarantee something extraordinary for every palate. So with
-                    that, we welcome you to a world where every cut is a cut
-                    above the rest. Welcome to World’s Finest Cuts. Explore,
-                    indulge, and prepare to be wowed!
+                    <span>Our mission is simple:</span> to bridge the gap between
+                    the farm and your table with fresh, high-quality, and ethically
+                    sourced meats and seafood. We champion the flavors of nature,
+                    bringing to your kitchen a selection of products that are as
+                    pure as they are palatable.
+                
+                
+                    We are connoisseurs of the wholesome, with an array of
+                    all-natural, grass-fed beef, free-range chicken, wild-caught
+                    seafood, and cage-free pork. Our dedication to sustainability
+                    means every dish you create is not just a meal but a step
+                    towards a more responsible and flavorful future.
+                
+                
+                    Join us on a culinary journey where quality reigns supreme, and
+                    discover why every cut we offer is a cut above.
                 </p>
             </section>
+         
         </main>
     );
 };
