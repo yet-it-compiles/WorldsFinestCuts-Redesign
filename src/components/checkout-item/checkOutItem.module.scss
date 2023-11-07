@@ -1,0 +1,111 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.checkoutItem {
+    margin-left: 2.5rem;
+    max-width: 86%;
+
+    color: whitesmoke;
+    border-radius: 0.5rem;
+    background-color: $header-background;
+
+    section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0.5rem;
+    }
+
+    button {
+        height: 20px;
+        width: 20px;
+
+        border-radius: 2rem;
+        color: whitesmoke;
+        background-color: gray;
+    }
+
+    .productImageWrapper {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+
+        img {
+            max-width: 100px;
+            border-radius: 0.5rem;
+        }
+    }
+
+    .quantityControl {
+        @include flexRowCenter;
+        margin-left: 16.5rem;
+
+        button {
+            padding: 8px 12px;
+            border: 1px solid #ccc;
+            background-color: #f8f8f8;
+            color: #333;
+            font-size: 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #e2e2e2;
+            }
+
+            &:focus {
+                outline: none;
+                box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.5);
+            }
+
+            &:active {
+                background-color: #d4d4d4;
+            }
+        }
+
+        .incrementButton,
+        .decrementButton {
+            border: none;
+            background-color: #787878;
+            border-radius: 50%;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #c0c0c0;
+            }
+        }
+
+        .quantity {
+            min-width: 2rem;
+            text-align: center;
+        }
+    }
+
+    .priceWrapper {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #dbd6d6;
+        }
+
+        .removeButton {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+
+            svg {
+                color: #d9534f;
+                width: 2rem;
+                height: 2rem;
+            }
+
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}

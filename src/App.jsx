@@ -8,11 +8,13 @@
  *
  * @exports App
  */
+import styles from "./app.scss";
+
 import LandingPage from "./pages/landing-page/LandingPage";
-import AboutUs from "./pages/about-us/AboutUs";
+import AboutUs from "./pages/About-Us/AboutUs";
 import Product from "./components/product-display/Product";
 import SpecialOffers from "./pages/special-offers/SpecialOffers";
-import Checkout from "./pages/checkout/Checkout";
+import CheckoutPage from "./pages/checkout/Checkout";
 
 /**
  * @function App
@@ -24,13 +26,13 @@ import Checkout from "./pages/checkout/Checkout";
  */
 const App = () => {
     return (
-        <>
-            <LandingPage />
-            {/* <AboutUs/> */}
-            {/* <SpecialOffers/> */}
-            {/* <Product /> */}
-            {/* <Checkout /> */}
-        </>
+        <div>
+            {/* <LandingPage />
+            <AboutUs />
+            <SpecialOffers />
+            <Product /> */}
+            <CheckoutPage />
+        </div>
     );
 };
 

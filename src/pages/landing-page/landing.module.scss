@@ -5,7 +5,7 @@
 
 .landing {
     @include flexRowCenter;
-    height: 98vh;
+    min-height: 98vh;
     color: whitesmoke;
     background: url("../../assets/landing-background.svg") no-repeat center
         center/cover;
@@ -31,14 +31,16 @@
 
         .decoration {
             @include flexRowCenter;
-            width: 9rem;
+            width: 7rem;
             border: 1px white solid;
             transform: rotate(90deg);
+            margin-top: 100px;
+            margin-bottom: 100px;
         }
 
         .icons {
             @include flexCol;
-            gap: 2rem;
+            gap: 6rem;
 
             a:nth-child(2) svg {
                 color: $emphasis-color;
@@ -52,7 +54,7 @@
     }
 
     h1 {
-        font-size: 85px;
+        font-size: 5.3125vw;
         font-weight: 400;
         font-family: "ABeeZee", sans-serif;
         margin: 0.5rem 0;
@@ -81,7 +83,7 @@
     button {
         font-family: inter;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 1rem;
         padding: 1rem;
         border-radius: 2rem;
         border-style: none;

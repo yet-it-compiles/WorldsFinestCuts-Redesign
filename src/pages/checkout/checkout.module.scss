@@ -1,45 +1,41 @@
+@import "../../styles/mixins";
 @import "../../styles/variables";
 
 .checkout {
+    color: white;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    max-width: 60vw;
 
-    gap: 1rem;
-    background-color: #f9f9f9;
-
-    h1 {
-        color: #333;
+    header {
+        text-align: left;
+        margin-bottom: 2rem;
     }
 
-    .subtotal {
-        text-align: right;
-        font-size: 1.2rem;
-        font-weight: bold;
-        color: #333;
-    }
-}
-
-.checkoutItem {
-    padding: 0.5rem;
-    max-width: 50%;
-
-    color: whitesmoke;
-    border-radius: 0.5rem;
-    background-color: $header-background;
-
-    section {
+    ul {
+        list-style: none;
         display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        gap: 4rem;
+        gap: 41rem;
+
+        div {
+            display: flex;
+            gap: 8rem;
+        }
     }
 
-    button {
-        height: 15px;
-        width: 15px;
-        margin: 0.3rem;
-        border-radius: 2rem;
-        color: whitesmoke;
-        background-color: gray;
+    .separator {
+        border: 1px white solid;
+        transform: rotate(180deg);
+        margin-left: 2.5rem;
+        width: 51.5vw;
+    }
+
+    .cartCostWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-top: auto;
+        margin-bottom: 3rem;
     }
 }
