@@ -2,40 +2,40 @@
 @import "../../styles/variables";
 
 .checkout {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    max-width: 60vw;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	max-width: 60vw;
 
-    header {
-        text-align: left;
-        margin-bottom: 2rem;
-    }
+	header {
+		text-align: left;
+		margin-bottom: 2rem;
+	}
 
-    ul {
-        list-style: none;
-        display: flex;
-        gap: 41rem;
+	ul {
+		list-style: none;
+		display: flex;
+		gap: 41rem;
 
-        div {
-            display: flex;
-            gap: 8rem;
-        }
-    }
+		div {
+			display: flex;
+			gap: 8rem;
+		}
+	}
 
-    .separator {
-        border: 1px white solid;
-        transform: rotate(180deg);
-        margin-left: 2.5rem;
-        width: 51.5vw;
-    }
+	.separator {
+		border: 1px white solid;
+		transform: rotate(180deg);
+		margin-left: 2.5rem;
+		width: 51.5vw;
+	}
 
-    .cartCostWrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        margin-top: auto;
-        margin-bottom: 3rem;
-    }
+	.cartCostWrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		margin-top: auto;
+		margin-bottom: 3rem;
+	}
 }
