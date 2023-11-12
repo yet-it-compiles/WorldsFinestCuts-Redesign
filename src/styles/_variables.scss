@@ -1,10 +1,34 @@
-$header-background: #272727;
-$header-CTA: #4972db;
-
+// Application Colors
 $primary-color: #fdaf38;
 $emphasis-color: #ff9f0d;
 $secondary-color: whitesmoke;
+$header-CTA: #4972db;
+$header-background: #272727;
 
+// Error Colors
+$error-color: #e74c3c;
+$success-color: #2ecc71;
+$warning-color: #f39c12;
+
+// Typography
 $font-primary: "Open Sans", sans-serif;
 $font-secondary: "Grechen Fuemen", cursive;
 $font-tertiary: "ABeeZee", sans-serif;
+
+// Spacing
+$base-unit: 1rem;
+
+$spacing: (
+	base: $base-unit,
+	half: calc($base-unit / 2),
+	double: calc($base-unit * 2),
+	triple: calc($base-unit * 3),
+);
+
+// Breakpoints
+$breakpoints: (
+	small: 30em,
+	medium: 48em,
+	large: 64em,
+	xlarge: 75em,
+);

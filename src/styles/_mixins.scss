@@ -1,43 +1,80 @@
-@mixin setContainer($height, $width) {
-    height: $height;
-    width: $width;
-  }
-  
-  @mixin setContainerFull {
-    height: 100%;
-    width: 100%;
-  }
+/**
+ * Sets the minimum height and width of an element
+ *
+ * Parameters:
+ *   - $minHeight: The minimum height of the element
+ *   - $width: The width of the element
+ *
+ * Usage:
+ *   @include responsiveElement($minHeight, $width);
+ */
+@mixin responsiveElement($minHeight, $width) {
+	min-height: $minHeight;
+	width: $width;
+}
 
-  @mixin flexCol {
-    display: flex;
-    flex-direction: column;
-  }
+/**
+ * Establishes a flex container with a row layout
+ *
+ * Usage:
+ *   @include flex-row;
+ */
+@mixin flex-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
-  @mixin flexAlign {
-    display: flex;
-    align-items: center;
-  }
-  
-  @mixin flexRowCenter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-    
-  @mixin flexColCenter {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  @mixin strip {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    background-color: transparent;
-  }
-  
-  @mixin flip {
-    transform: scaleX(-1);
-  }
+/**
+ * Establishes a flex container with a column layout
+ *
+ * Usage:
+ *   @include flex-col;
+ */
+@mixin flex-col {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/**
+ * A flexible layout mixin for creating responsive and customizable flexbox
+ * layouts
+ *
+ * Parameters:
+ *   - $direction: Flex direction. Values: 'row', 'row-reverse', 'column',
+ * 'column-reverse'
+ *   - $justify: Horizontal alignment. Values: 'flex-start',
+ * 'flex-end''center', 'space-between', 'space-around', 'space-evenly'
+ *   - $align: Vertical alignment. Values: 'flex-start', 'flex-end', 'center', * 'baseline', 'stretch'
+ *   - $gap: Gap between items, accepts any CSS unit
+ *
+ * Usage:
+ *   @include flex-layout(column, flex-start, flex-start, 0.5rem);
+ */
+
+@mixin flex-layout(
+	$direction: row,
+	$justify: center,
+	$align: center,
+	$gap: 1rem
+) {
+	display: flex;
+	flex-direction: $direction;
+	justify-content: $justify;
+	align-items: $align;
+	gap: $gap;
+}
+
+/**
+ * Resets input styles to their default appearance.
+ *
+ * Usage:
+ *   @include stripInput;
+ */
+@mixin stripInput {
+	border: none;
+	outline: none;
+	background: transparent;
+}
