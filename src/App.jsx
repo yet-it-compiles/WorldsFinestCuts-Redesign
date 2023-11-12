@@ -8,7 +8,7 @@
  *
  * @exports App
  */
-import styles from "./app.scss";
+import styles from "./app.module.scss";
 
 import LandingPage from "./pages/landing-page/LandingPage";
 import AboutUs from "./pages/About-Us/AboutUs";
@@ -25,15 +25,15 @@ import CheckoutPage from "./pages/checkout/Checkout";
  * @returns {JSX.Element} The applications UI components
  */
 const App = () => {
-    return (
-        <div>
-            {/* <LandingPage />
+	return (
+		<div>
+			{/* <LandingPage />
             <AboutUs />
             <SpecialOffers />
             <Product /> */}
-            <CheckoutPage />
-        </div>
-    );
+			<CheckoutPage />
+		</div>
+	);
 };
 
 export default App;
