@@ -5,64 +5,64 @@
 @import url("https://fonts.googleapis.com/css2?family=Cutive&display=swap");
 
 .about {
-    @include flexRowCenter;
-    height: 100vh;
-    padding: 20px;
+	@include flex-center;
+	height: 100vh;
+	padding: 20px;
 
-    color: whitesmoke;
-    background: url("../../assets/landing-background.svg") no-repeat center
-        center/cover;
+	color: whitesmoke;
+	background: url("../../assets/landing-background.svg") no-repeat center
+		center/cover;
 
-    .container {
-        @include flexAlign;
-        margin-left: 30%;
-        box-sizing: border-box;
+	.container {
+		@include flex-center;
+		margin-left: 30%;
+		box-sizing: border-box;
 
-        gap: 5rem;
-    }
+		gap: 5rem;
+	}
 
-    header {
-        @include flexAlign;
+	header {
+		@include flex-center;
 
-        .decoration {
-            width: 10rem;
-            border: 1px white solid;
-            margin: 0 10px 0 0;
-            margin-top: 1rem;
-        }
+		.decoration {
+			width: 10rem;
+			border: 1px white solid;
+			margin: 0 10px 0 0;
+			margin-top: 1rem;
+		}
 
-        h1 {
-            font-size: 26px;
-            font-family: Cutive;
-            font-weight: 400;
-            margin-bottom: 0.5rem;
+		h1 {
+			font-size: 26px;
+			font-family: Cutive;
+			font-weight: 400;
+			margin-bottom: 0.5rem;
 
-            span {
-                color: #dcca87;
-            }
-        }
-    }
+			span {
+				color: #dcca87;
+			}
+		}
+	}
 
-    h2 {
-        margin: 0.5rem 0;
-        font-size: 50px;
-        font-family: Arial;
-        font-weight: 700;
-        span {
-            color: $primary-color;
-        }
-    }
+	h2 {
+		margin: 0.5rem 0;
+		font-size: 50px;
+		font-family: Arial;
+		font-weight: 700;
+		span {
+			color: $primary-color;
+		}
+	}
 
-    p {
-        text-align: justify;
-        width: 50%;
-        font-size: 1rem;
-        line-height: 35px;
-        letter-spacing: 0.8px;
-        font-family: open sans;
+	p {
+		text-align: justify;
+		width: 50%;
+		font-size: 1rem;
+		line-height: 35px;
+		letter-spacing: 0.8px;
+		font-family: open sans;
 
-        span {
-            color: $primary-color;
-        }
-    }
+		span {
+			color: $primary-color;
+		}
+	}
 }

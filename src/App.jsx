@@ -27,10 +27,10 @@ import CheckoutPage from "./pages/checkout/Checkout";
 const App = () => {
 	return (
 		<div>
-			{/* <LandingPage />
-            <AboutUs />
-            <SpecialOffers />
-            <Product /> */}
+			<LandingPage />
+			<AboutUs />
+			<SpecialOffers />
+			<Product />
 			<CheckoutPage />
 		</div>
 	);
